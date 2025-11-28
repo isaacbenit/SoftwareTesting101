@@ -29,6 +29,18 @@ public class Homepage {
         ClickLink("Javascript Alerts");
         return new AlertPage(driver);
     }
+    public FileUploadPage clickfileUpload(){
+        ClickLink("Upload File Demo");
+        return new FileUploadPage(driver);
+    }
+    public ModalPage clickModalPage(){
+        ClickLink("Bootstrap Modals");
+        return new ModalPage(driver);
+    }
+    public DynamicLoadingPage clickloading(){
+        ClickLink("Dynamic Data Loading");
+        return new DynamicLoadingPage(driver);
+    }
     private void ClickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
