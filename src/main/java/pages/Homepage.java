@@ -25,6 +25,10 @@ public class Homepage {
         ClickLink("Key Press");
         return new KeysPage(driver);
     }
+    public AlertPage clickAlert(){
+        ClickLink("Javascript Alerts");
+        return new AlertPage(driver);
+    }
     private void ClickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }

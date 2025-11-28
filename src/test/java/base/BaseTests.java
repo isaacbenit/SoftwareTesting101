@@ -21,6 +21,7 @@ public class BaseTests {
     @BeforeMethod
     public void goHome(){
         driver.get("https://www.lambdatest.com/selenium-playground/");
+        homepage = new Homepage(driver);
         }
 
 }
