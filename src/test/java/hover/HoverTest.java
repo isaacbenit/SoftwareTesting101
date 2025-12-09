@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class hoverTest extends BaseTests {
+public class HoverTest extends BaseTests {
     @Test
     public void hoverTest(){
         var HoverPage =homepage.clickHoverPage();

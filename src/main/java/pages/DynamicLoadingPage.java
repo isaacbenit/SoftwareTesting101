@@ -17,7 +17,7 @@ public class DynamicLoadingPage {
         this.driver = driver;
     }
 
-    public void StartLoading(){
+    public void startLoading(){
         driver.findElement(loadRandomUserbutton).click();
         FluentWait wait = new FluentWait(driver).withTimeout(Duration.ofSeconds(5))
                 .pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class);
