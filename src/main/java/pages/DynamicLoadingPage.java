@@ -13,7 +13,7 @@ public class DynamicLoadingPage {
     WebDriver driver;
     By loadRandomUserbutton = By.id("save");
     By randomuser = By.id("loading");
-    DynamicLoadingPage(WebDriver driver){
+    public DynamicLoadingPage(WebDriver driver){
         this.driver = driver;
     }
 

@@ -16,10 +16,10 @@ public class AlertPage {
     public String getAlertTest(){
         return driver.switchTo().alert().getText();
     }
-    public void submitAlert(){
+    public void testAlertAccept(){
         driver.switchTo().alert().accept();
     }
-    public void cancelAlert(){
+    public void testAlertCancel(){
         driver.switchTo().alert().dismiss();
     }
     public String getAlertMessage(){
